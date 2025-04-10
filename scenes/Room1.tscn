@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn8tcl4f262aa"]
+
+[ext_resource type="Script" uid="uid://1ehtfdgqj68j" path="res://scripts/room.gd" id="1_2dtu0"]
+[ext_resource type="PackedScene" uid="uid://dye0f1s6otya6" path="res://scenes/puddle.tscn" id="2_7sa2y"]
+
+[node name="Room1" type="Node2D"]
+script = ExtResource("1_2dtu0")
+metadata/_custom_type_script = "uid://1ehtfdgqj68j"
+
+[node name="Puddle" parent="." instance=ExtResource("2_7sa2y")]
+position = Vector2(192, 481)
+
+[node name="Puddle2" parent="." instance=ExtResource("2_7sa2y")]
+position = Vector2(360, 242)
+
+[node name="Puddle3" parent="." instance=ExtResource("2_7sa2y")]
+position = Vector2(636, 228)
+
+[node name="Puddle4" parent="." instance=ExtResource("2_7sa2y")]
+position = Vector2(904, 381)
+
+[node name="Puddle5" parent="." instance=ExtResource("2_7sa2y")]
+position = Vector2(667, 497)
