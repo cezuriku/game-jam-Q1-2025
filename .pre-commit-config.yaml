@@ -34,8 +34,6 @@ repos:
   hooks:
   - id: gdformat
     exclude: '^addons/gd-plug/'
-  - id: gdlint
-    exclude: '^addons/gd-plug/'
 - repo: local
   hooks:
   - id: check-filenames-are-lowercase
