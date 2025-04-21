@@ -29,11 +29,12 @@ buses/default_bus_layout="res://resources/default_bus_layout.tres"
 GlobalSignal="*res://scripts/framework/global_signal.gd"
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 MenuTemplateManager="*res://addons/EasyMenus/Nodes/menu_template_manager.tscn"
+Global="*res://scripts/global.gd"
 
 [custom_options]
 
-build_info/commit="e6ace5cc66a987066354c3145726054aff12dc3e"
-build_info/date="2025/04/16"
+build_info/commit="acb9621d198d0d30ab400ab29de4c8152aa87db3"
+build_info/date="2025/04/21"
 
 [display]
 
@@ -66,4 +67,5 @@ switch_robot={
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 environment/default_environment="res://resources/default_env.tres"

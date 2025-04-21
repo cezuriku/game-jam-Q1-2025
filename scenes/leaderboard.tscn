@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cfb2mvv1ppjkn"]
 
-[ext_resource type="Script" uid="uid://q7s4y8es23l4" path="res://addons/simpleboards_plugin/SimpleBoardsApi.gd" id="1_mrg81"]
+[ext_resource type="Script" uid="uid://bbtlcrpp4hiuh" path="res://addons/simpleboards_plugin/SimpleBoardsApi.gd" id="1_mrg81"]
 [ext_resource type="Script" uid="uid://cgtldlm4jnuxd" path="res://scripts/leaderboard.gd" id="1_wgq7h"]
 
 [node name="Leaderboard" type="Control"]
@@ -14,7 +14,6 @@ script = ExtResource("1_wgq7h")
 
 [node name="SimpleBoardsApi" type="Node" parent="."]
 script = ExtResource("1_mrg81")
-metadata/_custom_type_script = "uid://q7s4y8es23l4"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -53,3 +52,24 @@ text = "Cedric 200"
 
 [node name="ScoreContainer" type="VBoxContainer" parent="Panel/VBoxContainer"]
 layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 271.0
+offset_right = 1421.0
+offset_bottom = 672.0
+
+[node name="Label" type="Label" parent="Panel2"]
+layout_mode = 0
+size_flags_horizontal = 4
+text = "Nicely done you can enter
+in the leaderboard.
+What's your name? "
+
+[node name="TextEdit" type="TextEdit" parent="Panel2"]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 244.0
+offset_right = 602.0
+offset_bottom = 327.0

@@ -10,6 +10,10 @@ func _plugging():
 		"KoBeWi/Godot-Universal-Fade",
 		{"commit": "f091514bba652880f81c5bc8809e0ee4498988ea", "renovate-branch": "master"}
 	)
+	plug(
+		"isetr/simpleboards_godot",
+		{"commit": "1c1c84fe349ca279b4d2e7cdbe2440de99b37bd4", "renovate-branch": "main"}
+	)
 
 	# Patched version
 	plug(

@@ -1,34 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://d11wogcjxnncv"]
+[gd_scene load_steps=5 format=3 uid="uid://d11wogcjxnncv"]
 
 [ext_resource type="PackedScene" uid="uid://cn8tcl4f262aa" path="res://scenes/room1.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://1amxohc1e357" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://bgpt5d25ttvn1" path="res://scripts/main.gd" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://gjk2av1u5pie" path="res://energia.png" id="4_jyhfs"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
-size = Vector2(1177, 666)
-
-[sub_resource type="Gradient" id="Gradient_sugp2"]
-offsets = PackedFloat32Array(0.0194805, 1)
-colors = PackedColorArray(0.180392, 0, 0, 1, 0.607545, 0.259935, 1.92523e-07, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_jyhfs"]
-gradient = SubResource("Gradient_sugp2")
-
 [node name="Main" type="Node2D"]
 script = ExtResource("1_sugp2")
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(578.5, 323)
-shape = SubResource("RectangleShape2D_0wfyh")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(581.5, 324.5)
-scale = Vector2(18.4531, 10.3281)
-texture = SubResource("GradientTexture2D_jyhfs")
 
 [node name="Room1" parent="." instance=ExtResource("1_0wfyh")]
 
@@ -88,6 +66,3 @@ text = "mW"
 [node name="TextureRect" type="TextureRect" parent="Camera2D/Control/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("4_jyhfs")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
