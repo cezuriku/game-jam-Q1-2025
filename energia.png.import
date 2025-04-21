@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gjk2av1u5pie"
-path="res://.godot/imported/Energia.png-a93030ff2fd66f51749e978aae81ac13.ctex"
+path="res://.godot/imported/energia.png-b7f950a616f34ee5cc080a49334f4ed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Energia.png"
-dest_files=["res://.godot/imported/Energia.png-a93030ff2fd66f51749e978aae81ac13.ctex"]
+source_file="res://energia.png"
+dest_files=["res://.godot/imported/energia.png-b7f950a616f34ee5cc080a49334f4ed8.ctex"]
 
 [params]
 
