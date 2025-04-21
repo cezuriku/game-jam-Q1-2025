@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfb2mvv1ppjkn"]
+
+[ext_resource type="Script" uid="uid://q7s4y8es23l4" path="res://addons/simpleboards_plugin/SimpleBoardsApi.gd" id="1_mrg81"]
+[ext_resource type="Script" uid="uid://cgtldlm4jnuxd" path="res://scripts/leaderboard.gd" id="1_wgq7h"]
+
+[node name="Leaderboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wgq7h")
+
+[node name="SimpleBoardsApi" type="Node" parent="."]
+script = ExtResource("1_mrg81")
+metadata/_custom_type_script = "uid://q7s4y8es23l4"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_right = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Leaderboard"
+
+[node name="ExampleLabel" type="Label" parent="Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Cedric 200"
+
+[node name="ScoreContainer" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2

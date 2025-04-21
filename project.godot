@@ -32,16 +32,27 @@ MenuTemplateManager="*res://addons/EasyMenus/Nodes/menu_template_manager.tscn"
 
 [custom_options]
 
-build_info/commit="b8be4ac0cf542e54fea623b52192681c4b95cd83"
-build_info/date="2025/04/10"
+build_info/commit="e6ace5cc66a987066354c3145726054aff12dc3e"
+build_info/date="2025/04/16"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/export-build-info/plugin.cfg")
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/export-build-info/plugin.cfg", "res://addons/simpleboards_plugin/plugin.cfg")
 
 [filesystem]
 
 import/blender/enabled=false
+
+[gui]
+
+theme/custom="uid://c1uj0iyfytfyw"
+theme/custom_font="uid://c1uj0iyfytfyw"
 
 [input]
 

@@ -16,6 +16,14 @@ func set_robot(number):
 			energy = 75.3
 		3:
 			energy = 34.7
+		4:
+			energy = 20.0
+
+func _input(event):
+	match robot:
+		4:
+			if event.is_action_pressed("ui_up"):
+				rotation = rotation + PI * 5/6
 
 func _process(delta):
 	match robot:
@@ -39,3 +47,6 @@ func _process(delta):
 				var forward = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 				velocity = Vector2(forward, 0).rotated(rotation + PI / 2) * player_speed
 				move_and_slide()
+		4:
+			velocity = Vector2(1, 0).rotated(rotation + PI / 2) * player_speed
+			move_and_slide()
